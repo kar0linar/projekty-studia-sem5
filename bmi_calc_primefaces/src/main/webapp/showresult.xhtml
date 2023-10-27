@@ -15,11 +15,12 @@
 		<p:panel>
 			<p:messages />
 			<div class="bottom-space">
-				<h:outputText value="twoje BMI wynosi: #{calcBB.result}"
-					rendered="#{calcBB.result != null}" />
+			<h:outputText value="twoje BMI wynosi: " rendered="#{calcBB.result != null}" />
+			<h:outputText value="#{calcBB.result}" rendered="#{calcBB.result != null}" style="font-weight: bold;" />
+
 			</div>
 			<h:form>
-				<h:commandButton value="powrót" action="index" />
+				<p:commandLink value="powrót" action="index" />
 			</h:form>
 		</p:panel>
 

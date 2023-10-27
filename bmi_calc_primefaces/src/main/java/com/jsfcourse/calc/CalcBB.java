@@ -13,7 +13,7 @@ import java.math.RoundingMode;
 public class CalcBB {
     private String x;
     private String y;
-    private String result; // Zmieniamy na String
+    private String result; 
 
     @Inject
     FacesContext ctx;

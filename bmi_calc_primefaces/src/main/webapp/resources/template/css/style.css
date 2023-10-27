@@ -1,8 +1,9 @@
 body{
-	font-family: 'Century Gothic',helvetica,verdana,arial;
-	background: url("../img/w1.jpg.jsf?ln=template") no-repeat center center fixed;
-	background-size: cover;
-	margin:0;
+	body {
+    font-family: 'Century Gothic', helvetica, verdana, arial;
+    background-color: black; /* Ustawienie koloru tła na czarny */
+    margin: 0;
+}
 }
 
 .bottom-space{
