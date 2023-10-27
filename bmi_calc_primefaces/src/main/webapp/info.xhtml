@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<ui:composition template="/templates/main-template.xhtml">
+
+	<ui:define name="title">
+		INFO
+	</ui:define>
+
+	<ui:define name="content">
+		<p:panel styleClass="bottom-space">
+			<h:graphicImage name="img/java.png" library="template" />
+			wzór na wskaznik BMI = kg / m2
+			<h:form>
+				<h:commandLink value="Strona główna" action="index" />
+			</h:form>
+		</p:panel>
+	</ui:define>
+
+</ui:composition>
+</html>
