@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact name="primefaces_02:jar">
+    <output-path>$PROJECT_DIR$/classes/artifacts/primefaces_02_jar</output-path>
+    <root id="root">
+      <element id="archive" name="primefaces_02.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

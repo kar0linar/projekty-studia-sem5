@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<ui:composition template="/templates/page-template.xhtml">
+
+	<ui:define name="pageContent">
+
+		<h:messages id="msg" />
+
+		<h:form>
+			<h:panelGrid columns="2" cellpadding="5" styleClass="bottom-space">
+				
+				<h:outputLabel for="idx" value="#{txtCalc.valueX}:" />
+
+				<h:inputText id="idx" value="#{calcBB.x}" required="true"
+					requiredMessage="X: #{txtCalcErr.calcParamRequired}"
+					converterMessage="X: #{txtCalcErr.calcParamIncorrect}" />
+
+				<h:outputLabel for="idy" value="#{txtCalc.valueY}" />
+				
+				<h:inputText id="idy" value="#{calcBB.y}" required="true"
+					requiredMessage="Y: #{txtCalcErr.calcParamRequired}"
+					converterMessage="Y: #{txtCalcErr.calcParamIncorrect}" />
+
+				<h:commandButton value="#{txtCalc.add}" action="#{calcBB.calc()}">
+					<f:ajax execute="@form" render="msg" />
+				</h:commandButton>
+				
+			</h:panelGrid>
+		</h:form>
+
+	</ui:define>
+
+</ui:composition>
+</html>
